@@ -2,7 +2,8 @@ import './index.css'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../../assets/logoPac.png'
+import logo from '../../assets/img/icons/logoPac.png'
+import CartWidget from '../cart-widget/CartWidget';
 
 const Header = () => {
     return (
@@ -19,7 +20,10 @@ const Header = () => {
                         <Nav.Link href="#Tienda">Tienda</Nav.Link>
                         <Nav.Link href="#sobre-nosotros">Sobre Nosotros</Nav.Link>
                     </Nav>
-                </div>    
+                </div>
+                <div>
+                    <CartWidget/>    
+                </div>   
             </Container>
         </Navbar>
     );
