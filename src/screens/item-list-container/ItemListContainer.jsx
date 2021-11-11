@@ -1,3 +1,4 @@
+import Contador from '../../components/item-count/itemCount';
 import './index.css';
 
 const ItemListContainer = (props) => {
@@ -9,8 +10,8 @@ const ItemListContainer = (props) => {
                 <h3 className="landing-text">{props.location}</h3>
                 <p className="landing-text">{props.greeting}</p>
             </div>
-        </section>
-        
+            <Contador/>
+        </section>    
     );
 };
 
