@@ -40,3 +40,8 @@
 .button:disabled:hover {
   box-shadow: none;
 }
+
+.item-count{
+  background-color: blueviolet;
+  border-radius: 5px;
+}

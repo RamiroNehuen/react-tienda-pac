@@ -1,7 +1,8 @@
-import Contador from '../../components/item-count/itemCount';
+import ItemsList from '../../components/item-list/items-list';
 import './index.css';
 
 const ItemListContainer = (props) => {
+
     return (
         <section className="landing-wrapper">
             <div className="landing-container"> 
@@ -10,7 +11,7 @@ const ItemListContainer = (props) => {
                 <h3 className="landing-text">{props.location}</h3>
                 <p className="landing-text">{props.greeting}</p>
             </div>
-            <Contador/>
+            <ItemsList/>
         </section>    
     );
 };

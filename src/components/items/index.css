@@ -1,0 +1,22 @@
+.product-card {
+    width: 20%;
+    margin:3%;;
+}
+
+.card-image {
+    width: 184px;
+    
+}
+
+.card-text {
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.card-description {
+    font-size: 1rem;
+    background-color: #ee7752;
+    border-radius: 5px;
+    margin-bottom: 0;
+}

@@ -16,7 +16,7 @@
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 30vh;
+    padding: 5vh;
 }
 
 .landing-text {
@@ -29,7 +29,7 @@ h1,h2,h3 {
     letter-spacing: .1em;
 }
 
-p {
+.greeting {
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
 }

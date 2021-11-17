@@ -24,8 +24,9 @@ const ItemCount = () => {
     };
      
     return (
-        <div> 
-            <p>{`Ud. va a ingresar ${number} unidad/es al carrito`}</p>
+        <div className="item-count"> 
+            <p>{`Cantidad de Unidadades`}</p>
+            <p>{`${number}`}</p>
             <button className="button" onClick={incrementar}>+</button>
             <button className="button" onClick={disminuir}>-</button>
             <div>
