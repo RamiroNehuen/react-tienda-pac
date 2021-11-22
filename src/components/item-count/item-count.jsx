@@ -6,7 +6,7 @@ const ItemCount = () => {
     const [number, setNumber] = useState(1);
     const stock = 5;
 
-    const incrementar = () => {
+    const increase = () => {
         if (number < stock) {
             setNumber (number + 1);
         } else {
@@ -15,7 +15,7 @@ const ItemCount = () => {
         
     };
 
-    const disminuir = () => {
+    const decrease = () => {
         if (number > 1) {
             setNumber (number - 1)
         } else {
@@ -27,8 +27,8 @@ const ItemCount = () => {
         <div className="item-count"> 
             <p>{`Cantidad de Unidadades`}</p>
             <p>{`${number}`}</p>
-            <button className="button" onClick={incrementar}>+</button>
-            <button className="button" onClick={disminuir}>-</button>
+            <button className="button" onClick={increase}>+</button>
+            <button className="button" onClick={decrease}>-</button>
             <div>
                 <button className="button">Añadir al carrito</button>
             </div>

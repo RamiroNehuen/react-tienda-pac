@@ -4,19 +4,14 @@
 }
 
 .card-image {
-    width: 184px;
+    width: 15rem;
     
 }
 
 .card-text {
-    background-color: blueviolet;
-    border-radius: 5px;
-    padding: 0.3rem;
-}
-
-.card-description {
     font-size: 1rem;
     background-color: #ee7752;
     border-radius: 5px;
     margin-bottom: 0;
+    padding: 1%;
 }
