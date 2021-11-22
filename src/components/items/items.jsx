@@ -1,5 +1,5 @@
 import './index.css';
-import ItemCount from '../../components/item-count/item-count';
+import ItemCount from '../item-count/ItemCount';
 
 
 

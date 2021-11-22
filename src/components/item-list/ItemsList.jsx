@@ -1,5 +1,5 @@
 import './index.css';
-import Item from '../items/items.jsx';
+import Item from '../items/Items.jsx';
 
 
 function ItemsList({items}) {

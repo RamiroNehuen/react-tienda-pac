@@ -1,4 +1,4 @@
-import ItemsList from '../../components/item-list/items-list';
+import ItemsList from '../../components/item-list/ItemsList';
 import './index.css';
 import { products } from '../../components/items/item-data.js';
 import { useState } from 'react';
