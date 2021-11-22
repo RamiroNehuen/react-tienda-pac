@@ -7,7 +7,7 @@ const ItemListContainer = (props) => {
 
     const [items, setItems]= useState ([]);
 
-    const bringProducts= new Promise ((resolve) => {
+    const bringProducts= new Promise ((resolve, reject) => {
         setTimeout (() =>{
                 resolve(products);
                 },2000);

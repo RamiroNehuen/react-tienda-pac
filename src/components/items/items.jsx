@@ -10,7 +10,6 @@ function Items({product}) {
       <div className="card-text">
         <h4>{product.title}</h4>
         <h3>{product.price}</h3>
-        <p>{product.description}</p>
       </div>
       <ItemCount/>
     </div>
@@ -18,7 +17,3 @@ function Items({product}) {
 
 
 export default Items;
-
-
-
-

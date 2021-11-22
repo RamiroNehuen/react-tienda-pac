@@ -15,7 +15,7 @@ export const products = [
       img:yerbaImg, 
       title:'Yerba La Buena', 
       price:'$270', 
-      description:'1 kg de Yerba Orgaánica Misionera'
+      description:'1 kg de Yerba Mate Orgánica. Elaborada en Misiones. Conserva el aroma y las propiedades de origen, generando en cada mateada una buena compañía. Con un sabor que solo YERBA MATE LA BUENA PUEDE LOGRAR. Colocar una cantidad a gusto y servir el mate con agua a 80°C.'
     },
     {
       id:'2',
