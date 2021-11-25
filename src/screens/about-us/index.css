@@ -1,32 +1,21 @@
-.item-detail-container {
+.about-us-container {
     background-image: url(../../assets/img/backgrounds/nuestros-productos.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 5vh;
-
-    display: flex;
-    justify-content: space-around;
-    height:85vh;
-    align-items: center;
+    padding: 20vh;
     text-align: center;
 }
 
-.item-detail-text {
-    display: flex;
-    flex-direction: column;
+.def {
+    width: 80%;
     margin: auto;
-    width: 50%;
-}
-
-.item-detail-text h4 {
-    font-size: 2rem;
-}
-
-.item-detail-text p {
-    font-size: 1.5rem;
+    margin-top: 3rem;
+    padding: 1%;
+    font-size: large;
+    font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }

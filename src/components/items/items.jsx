@@ -1,4 +1,5 @@
 import './index.css';
+import { Link } from 'react-router-dom';
 import ItemCount from '../item-count/ItemCount';
 
 
@@ -6,9 +7,9 @@ import ItemCount from '../item-count/ItemCount';
 function Items({product}) {
   return (
     <div className="product-card">
-      <img src={product.img} alt="imagen ilustrativa de prodcuto" className="card-image"/>
+      <Link to={`/product/${product.id }`}><img src={product.img} alt="imagen ilustrativa de prodcuto" className="card-image"/></Link>
       <div className="card-text">
-        <h4>{product.title}</h4>
+        <h3>{product.title}</h3>
         <h3>{product.price}</h3>
       </div>
       <ItemCount/>

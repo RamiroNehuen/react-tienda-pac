@@ -1,15 +1,38 @@
 .nav-wrapper {
     background: linear-gradient(-45deg, #ee7752, #00b347, #107631, blueviolet);
     font-size: large;
-    font-weight: bold;   
+    font-weight: bold;
+    padding: 1%;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.nav-links {
+    width: 60%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.second-line {
+    display: flex;
+    margin-top: 1%;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 .logo-nav {
-    width: 100px;
+    width: 80px;
 }
 

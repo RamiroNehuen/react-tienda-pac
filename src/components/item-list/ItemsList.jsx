@@ -1,7 +1,6 @@
 import './index.css';
 import Item from '../items/Items.jsx';
 
-
 function ItemsList({items}) {
 
   return (
@@ -9,10 +8,10 @@ function ItemsList({items}) {
        {
            items.map((product) => {
                return(
-                   <Item
-                       key={product.id}
-                       product={product}
-                   /> 
+                        <Item
+                            key={product.id}
+                            product={product}
+                        />
            )})
        }
    </section>

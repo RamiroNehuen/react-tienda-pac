@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Pacifico', cursive;
+  src: url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: pantonRust;
+  src: url(./assets/fonts/PantonRustHeavy-GrSh.otf);
+  font-display: swap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,h2,h3 {
+  font-family: pantonRust;
+  letter-spacing: .1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loader {
+  height: 80vh;
+  width: 100vw;
+  background-image: url(./assets/img/backgrounds/noticias.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

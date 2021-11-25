@@ -1,22 +1,26 @@
 
 import './App.css';
 import Header from'./components/header/Header.jsx';
-// import ItemListContainer from'./screens/item-list-container/ItemListContainer';
+import ItemListContainer from'./screens/item-list-container/ItemListContainer';
 import ItemDetailContainer from './screens/item-detail-container/ItemDetailContainer';
+import AboutUs from './screens/about-us/AboutUs';
+import Landing from './screens/landing/Landing';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      {/* <ItemListContainer 
-        title='TIENDA PAC' 
-        subTitle='PRODUCTORES A CONSUMIDORES' 
-        location='BUENOS AIRES - ZONA SUR' 
-        greeting='¡Bienvenidos! Aquí les ofrecemos productos agroecológicos y cooperativos directo de los productoes a los consumidores.'
-      /> */}
-
-      <ItemDetailContainer/>
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/products" element={<ItemListContainer />} />
+          <Route path="/category/:catId" element={<ItemListContainer />} />
+          <Route path="/about-us" element={<AboutUs/>} />
+          <Route path="/" element={<Landing/>} />
+          <Route path="/product/:itemId" element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>      
     </div>
   );
 };

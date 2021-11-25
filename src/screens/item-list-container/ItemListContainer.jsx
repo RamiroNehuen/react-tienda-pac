@@ -1,29 +1,38 @@
 import ItemsList from '../../components/item-list/ItemsList';
 import './index.css';
 import { products } from '../../components/items/item-data.js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import logo from '../../assets/img/icons/logoPac.png'
 
-const ItemListContainer = (props) => {
+
+const ItemListContainer =() => {
 
     const [items, setItems]= useState ([]);
 
-    const bringProducts= new Promise ((resolve, reject) => {
-        setTimeout (() =>{
-                resolve(products);
-                },2000);
-            });
-            bringProducts.then((res)=>{
-            setItems(res);
-            });
+    const [loader, setLoader] = useState (true);
+
+    const { catId } = useParams ();
+
+    useEffect(() => {
+        setLoader(true);
+        const bringProducts= new Promise ((resolve) => {
+            setTimeout (() =>{
+                    resolve(products);
+                    },2000);
+                });
+                bringProducts.then((res)=>{
+                    catId ? setItems(res.filter(item => item.category === catId)) :
+                setItems(res);
+                }).finally(()=> {setLoader(false)});
+    },[catId]);
+
+    
 
     return (
-        <section className="landing-wrapper">
-            <div className="landing-container"> 
-                <h1 className="landing-text">{props.title}</h1>
-                <h2 className="landing-text">{props.subTitle}</h2>
-                <h3 className="landing-text">{props.location}</h3>
-                <p className="landing-text">{props.greeting}</p>
-            </div>
+        loader ? <div className="loader"><img src={logo} alt="logo de pac" /></div>:
+        <section className="item-list-wrapper">
+            <h2>Nuestros Productos</h2>         
             <ItemsList items={items}/>
         </section>    
     );
