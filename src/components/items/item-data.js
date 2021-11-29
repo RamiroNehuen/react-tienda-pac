@@ -12,6 +12,7 @@ import pizzetas from  '../../assets/img/products/pizzetas.jpg';
 export const products = [
     {
       id:'1',
+      stock: 20,
       category: 'agroecologico',
       img:yerbaImg, 
       title:'Yerba La Buena', 
@@ -21,6 +22,7 @@ export const products = [
     {
       id:'2',
       img:verdurasEstacion,
+      stock: 22,
       category: 'agroecologico',
       title:'Bolsón de Verduras de Estación', 
       price:'$470', 
@@ -28,6 +30,7 @@ export const products = [
     },
     {
       id:'3',
+      stock: 17,
       category: 'agroecologico',
       img:verdurasPesadas, 
       title:'Bolsón de Verduras Pesadas', 
@@ -36,6 +39,7 @@ export const products = [
     },
     {
       id:'4',
+      stock:25,
       img:combo,
       category: 'agroecologico', 
       title:'Combo: Dos Bolsones', 
@@ -44,6 +48,7 @@ export const products = [
     },
     {
       id:'5',
+      stock: 15,
       category: 'agroecologico',
       img:miel, 
       title:'Miel Orgánica', 
@@ -52,6 +57,7 @@ export const products = [
     },
     {
       id:'6',
+      stock:13,
       img:azucar,
       category: 'agroecologico', 
       title:'Azúcar Mascabo', 
@@ -61,6 +67,7 @@ export const products = [
     {
       id:'7',
       img:budin,
+      stock:27,
       category: 'cooperativo',
       title:'Budin Vegano', 
       price:'$190', 
@@ -68,6 +75,7 @@ export const products = [
     },
     {
       id:'8',
+      stock:30,
       img:berenjenas,
       category: 'cooperativo', 
       title:'Berenjenas al Escabeche', 
@@ -76,6 +84,7 @@ export const products = [
     },
     {
       id:'9',
+      stock:32,
       category: 'cooperativo',
       img:mermeladas,
       title:'Mermeladas', 
@@ -84,6 +93,7 @@ export const products = [
     },
     {
       id:'10',
+      stock:11,
       img:pizzetas,
       category: 'cooperativo', 
       title:'Pizzetas', 

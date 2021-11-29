@@ -13,6 +13,8 @@ const [loader, setLoader] = useState (true);
 
 const { itemId } = useParams()
 
+const [goToCart, setGoToCart] = useState (false);
+
 
 useEffect(() => {
     setLoader (true)
@@ -27,10 +29,16 @@ useEffect(() => {
     }).finally(()=>{setLoader(false)})
 }, [itemId]);
         
+const onAdd = (cantidad) => {
+    console.log({ ...productDetail, quantity: cantidad });
+    setGoToCart(true);
+};
+ 
+
     return (
-        loader ? <div className="loader"><img src={logo} alt="logo de pac" /></div>:
+        loader ? <div className="loader"><img src={logo} alt="logo de pac" /></div> :
         <section>
-            <ItemDetail product={productDetail} />
+            <ItemDetail product={productDetail} onAdd={onAdd} goToCart={goToCart}/>
         </section>
             
         
