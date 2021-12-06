@@ -2,26 +2,10 @@
     background: linear-gradient(-45deg, #ee7752, #00b347, #107631, blueviolet);
     font-size: large;
     font-weight: bold;
-    padding: 1%;
-}
-
-.nav-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.nav-links {
-    width: 60%;
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.second-line {
-    display: flex;
-    margin-top: 1%;
+    padding: 0.5px;
 }
 
 .link {
@@ -29,11 +13,8 @@
     color: white;
 }
 
-
-
-
 .logo-nav {
-    width: 80px;
+    width: 50px;
 }
 
 .cart-icon {

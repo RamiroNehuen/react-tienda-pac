@@ -15,7 +15,7 @@ h1,h2,h3 {
 }
 
 .loader {
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   background-image: url(./assets/img/backgrounds/noticias.jpg);
   background-attachment: fixed;
