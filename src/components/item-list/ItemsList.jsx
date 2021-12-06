@@ -1,16 +1,19 @@
 import './index.css';
-import Item from '../items/Items.jsx';
+import { useContext } from 'react';
+import Item from '../items/Items'
+import { items } from '../../context/ContextProduct/ContextProduct';
 
-function ItemsList({items}) {
+function ItemsList() {
+
+    const products = useContext(items)
 
   return (
    <section className="item-list">
        {
-           items.map((product) => {
+           products.map(() => {
                return(
                         <Item
-                            key={product.id}
-                            product={product}
+    
                         />
            )})
        }

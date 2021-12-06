@@ -1,27 +1,24 @@
 import './index.css';
-import {useState} from 'react';
+import { useOnAdd, useIncrease, useDecrease, number } from '../../context/ContextProduct/ContextProduct';
 
-const ItemCount = ({ stock, onAdd }) => {
+const ItemCount = () => {
+
+    const numb = number;
     
-    const [number, setNumber] = useState(0);
+    const onAdd = useOnAdd ();
 
-    const increase = () => {
-        number !== stock && setNumber (number+1);        
-    };
+    const increase = useIncrease();
 
-    const decrease = () => {
-        number !== 0 && setNumber (number-1)    
-    };
-
+    const decrease = useDecrease ();
    
     return (
         <div className="item-count"> 
             <p>{`Cantidad de Unidadades`}</p>
-            <p>{`${number}`}</p>
+            <p>{`${numb}`}</p>
             <button className="button" onClick={increase}>+</button>
             <button className="button" onClick={decrease}>-</button>
             <div>
-                <button className="button" disabled={number===0} onClick={()=>onAdd(number)}>Añadir al carrito</button>
+                <button className="button" disabled={numb===0} onClick={()=>onAdd(numb)}>Añadir al carrito</button>
             </div>
         </div>
         );
