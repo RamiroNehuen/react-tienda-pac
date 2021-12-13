@@ -7,14 +7,16 @@ import AboutUs from './screens/about-us/AboutUs';
 import Landing from './screens/landing/Landing';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CartWidget from './components/cart-widget/CartWidget';
-import { ProductsProvider } from './context/ContextProduct/ContextProduct';
+import { CartContextP } from './context/CartContext/CartContext';
+
 
 
 function App() {
   return (
     <div className="App">
-      <ProductsProvider>
+      
         <BrowserRouter>
+        <CartContextP>
           <Header/>
           <Routes>
             <Route path="/products" element={<ItemListContainer />} />
@@ -24,8 +26,9 @@ function App() {
             <Route path="/product/:itemId" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<CartWidget/>} />
           </Routes>
-        </BrowserRouter>      
-      </ProductsProvider>
+          </CartContextP>
+        </BrowserRouter> 
+      
     </div>
   );
 };

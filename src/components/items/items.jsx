@@ -12,7 +12,7 @@ function Items({product}) {
         <h3>{product.title}</h3>
         <h3>{product.price}</h3>
       </div>
-      <ItemCount stock={product.stock}/>
+      <ItemCount stock={product.stock} product={product}/>
     </div>
   )};
 

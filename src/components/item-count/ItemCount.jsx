@@ -1,12 +1,21 @@
 import './index.css';
 import {useState} from 'react';
+import { useAddItem } from '../../context/CartContext/CartContext'
+// import { Link } from 'react-router-dom';
 
-const ItemCount = ({ stock, onAdd }) => {
+const ItemCount = ({ product }) => {
     
+    const addItem  = useAddItem();
+    
+
+    // const { goToCart } = useContext(CartContext)
+ 
+
+
     const [number, setNumber] = useState(0);
 
     const increase = () => {
-        number !== stock && setNumber (number+1);        
+        number !== product.stock && setNumber (number+1);       
     };
 
     const decrease = () => {
@@ -21,7 +30,11 @@ const ItemCount = ({ stock, onAdd }) => {
             <button className="button" onClick={increase}>+</button>
             <button className="button" onClick={decrease}>-</button>
             <div>
-                <button className="button" disabled={number===0} onClick={()=>onAdd(number)}>Añadir al carrito</button>
+                {
+                    // goToCart ? <Link to="/cart"><button className="button">Terminar compra</button></Link> :
+                    <button className="button"  disabled={number===0} onClick={()=>addItem(product, number)}>Añadir al carrito</button>   
+                }
+                
             </div>
         </div>
         );

@@ -1,8 +1,10 @@
 import './index.css';
 import ItemCount from '../item-count/ItemCount';
-import { Link } from 'react-router-dom';
 
-function ItemDetail ({product, onAdd, goToCart}) {
+
+
+function ItemDetail ({product}) {
+
     return (
         <section className="item-detail-container">
             <div>
@@ -14,7 +16,7 @@ function ItemDetail ({product, onAdd, goToCart}) {
                 <p>{product.description}</p>
             </div>
             <div>
-                {goToCart ? (<><Link to='/cart' className="button">Terminar compra</Link></>) : (<><ItemCount stock={product.stock} onAdd={onAdd}/></>)}
+                <ItemCount stock={product.stock} product={product} />
             </div>
         </section>
     );
