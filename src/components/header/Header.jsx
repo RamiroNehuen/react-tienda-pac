@@ -2,11 +2,13 @@ import './index.css'
 import logo from '../../assets/img/icons/logoPac.png'
 import { Link } from 'react-router-dom';
 import { categories } from '../items/item-data';
-import cartIcon from '../../assets/img/icons/cart-icon.png';
 import { Fragment } from 'react';
+
+import CartWidget from '../cart-widget/CartWidget'
 
 
 const Header = () => {
+
     return (
         <nav className="nav-wrapper topnav" id="myTopnav">
                 <span>
@@ -28,7 +30,7 @@ const Header = () => {
                     })}
                 </Fragment>
                 <span>
-                    <Link className="link" to="/cart"><img src={cartIcon} alt="Cart Icon" className="cart-icon"/></Link>
+                    <Link className="link" to="/cart"><CartWidget/></Link>
                 </span>            
         </nav>
     );

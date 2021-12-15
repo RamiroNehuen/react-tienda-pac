@@ -1,0 +1,17 @@
+.cartW-container {
+    display: flex;
+}
+
+.cart-icon {
+    width: 35px;
+}
+
+.cart-count {
+    height: 1rem;
+    width: 1rem;
+    background-color: #3de637;
+    border-radius: 100px;
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+}

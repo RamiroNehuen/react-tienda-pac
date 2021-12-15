@@ -8,19 +8,20 @@ export function CartContextP ({children}) {
     const [cartItems, setCartItems] = useState ([]);
 
     const isOnCart = (product) => {
-        return cartItems?.findIndex(item => item.id === product.id)
+    
+        return cartItems?.findIndex(item => item.id === product.id) !== -1
     }
 
 
     const addItem = (product, number) => {
-        if(isOnCart(product) === -1) {
-            product.quantity = number
+
+        product.quantity = number
+        
+        if(!isOnCart(product)) {
             setCartItems (cartItems.concat(product))
-        }else {
-            alert('El producto ya se encuentra en el carrito. Allí podras agregar más.')
+            
         }
     }
-
 
     const addOnCart = (productId) => {
         const product = cartItems.find(product => product.id === productId)

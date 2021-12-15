@@ -16,7 +16,7 @@ export const products = [
       category: 'agroecologico',
       img:yerbaImg, 
       title:'Yerba La Buena', 
-      price:'$270',
+      price: 270,
       quantity: 1,
       description:'1 kg de Yerba Mate Orgánica. Elaborada en Misiones. Conserva el aroma y las propiedades de origen, generando en cada mateada una buena compañía. Con un sabor que solo YERBA MATE LA BUENA PUEDE LOGRAR. Colocar una cantidad a gusto y servir el mate con agua a 80°C.'
     },
@@ -26,7 +26,7 @@ export const products = [
       stock: 22,
       category: 'agroecologico',
       title:'Bolsón de Verduras de Estación', 
-      price:'$470',
+      price:470,
       quantity: 1, 
       description:'5 kg de Verduras de Estación. Producida sin agrotóxicos por los trabajadores del MTE Rural.'
     },
@@ -36,7 +36,7 @@ export const products = [
       category: 'agroecologico',
       img:verdurasPesadas, 
       title:'Bolsón de Verduras Pesadas', 
-      price:'$440',
+      price: 440,
       quantity: 1, 
       description:'6 kg de Verduras Pesadas. Producida sin agrotóxicos por los trabajadores del MTE Rural.'
     },
@@ -46,7 +46,7 @@ export const products = [
       img:combo,
       category: 'agroecologico', 
       title:'Combo: Dos Bolsones', 
-      price:'$910',
+      price: 910,
       quantity: 1, 
       description:'Verduras de Estación + Verduras Pesadas (11kg).'
     },
@@ -56,7 +56,7 @@ export const products = [
       category: 'agroecologico',
       img:miel, 
       title:'Miel Orgánica', 
-      price:'$500',
+      price:500,
       quantity: 1, 
       description:'1 kg de Miel Orgánica.'
     },
@@ -66,7 +66,7 @@ export const products = [
       img:azucar,
       category: 'agroecologico', 
       title:'Azúcar Mascabo', 
-      price:'$200',
+      price: 200,
       quantity: 1, 
       description:'500 Kg de Azúcar Mascabo.'
     },
@@ -76,7 +76,7 @@ export const products = [
       stock:27,
       category: 'cooperativo',
       title:'Budin Vegano', 
-      price:'$190',
+      price: 190,
       quantity: 1, 
       description:'Budines Veganos. Sabores: Banana, Limón y Zanahoria.'
     },
@@ -86,7 +86,7 @@ export const products = [
       img:berenjenas,
       category: 'cooperativo', 
       title:'Berenjenas al Escabeche', 
-      price:'$200',
+      price: 200,
       quantity: 1, 
       description:'Berenjenas al escabeche caceras, en frasco.'
     },
@@ -96,7 +96,7 @@ export const products = [
       category: 'cooperativo',
       img:mermeladas,
       title:'Mermeladas', 
-      price:'$270 - Frutilla: $320',
+      price:320,
       quantity: 1, 
       description:'Mermeladas cooperativas. Sabores: tomate, limón, naranja y frutilla'
     },
@@ -106,7 +106,7 @@ export const products = [
       img:pizzetas,
       category: 'cooperativo', 
       title:'Pizzetas', 
-      price:'$140',
+      price: 140,
       quantity: 1, 
       description:'Pizzetas x 20 u. Producidas por el Centro Comunitario "Rompe el Encierro"'
     }
