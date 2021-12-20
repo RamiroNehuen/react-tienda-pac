@@ -8,7 +8,8 @@ import CartWidget from '../cart-widget/CartWidget'
 
 
 const Header = () => {
-
+    
+    
     return (
         <nav className="nav-wrapper topnav" id="myTopnav">
                 <span>

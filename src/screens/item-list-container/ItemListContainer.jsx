@@ -1,9 +1,10 @@
 import ItemsList from '../../components/item-list/ItemsList';
 import './index.css';
-import { products } from '../../components/items/item-data.js';
+// import { products } from '../../components/items/item-data.js';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import logo from '../../assets/img/icons/logoPac.png'
+import { getDocs, collection, getFirestore } from 'firebase/firestore'
 
 
 const ItemListContainer =() => {
@@ -16,7 +17,14 @@ const ItemListContainer =() => {
 
     useEffect(() => {
         setLoader(true);
-        const bringProducts= new Promise ((resolve) => {
+        const db = getFirestore ()
+        const ref = collection (db, 'products')
+        getDocs(ref)
+        .then((snapShot) => {
+            snapShot.docs.map((product) => setItems(prev => ([...prev, {...product.data(), id: product.id}])))
+            setLoader(false)
+        })
+        /*const bringProducts= new Promise ((resolve) => {
             setTimeout (() =>{
                     resolve(products);
                     },2000);
@@ -24,7 +32,7 @@ const ItemListContainer =() => {
                 bringProducts.then((res)=>{
                     catId ? setItems(res.filter(item => item.category === catId)) :
                 setItems(res);
-                }).finally(()=> {setLoader(false)});
+                }).finally(()=> {setLoader(false)});*/
     },[catId]);
 
     
